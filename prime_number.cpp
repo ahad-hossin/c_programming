@@ -1,13 +1,19 @@
-#include <stdio.h>
- int main()
+#include<stdio.h>
+int main()
 {
-    int a,sum=0;
+int result,a;
 
+scanf("%d",&a);
 
-    for (int i = 1;i<=100;i=i+1){
-
-        sum=(sum+1);
-        a=a+sum;
-    }
-printf("%d \n",a);
+for(int i=2;i<a/2;i=i+1){
+    if(a%i==0){
+    printf("not prime");
+    return 0;
+   }
 }
+printf("is prime");
+
+return 0;
+}
+
+
